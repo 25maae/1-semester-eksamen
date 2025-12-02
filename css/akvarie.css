@@ -23,19 +23,15 @@
 }
 
 html,
-body {
-  height: 100%;
-}
-
 .bg {
   position: absolute;
-  inset: auto 0 0 0;
   width: 100%;
   height: 100%;
   background: url(../img/baggrund.svg);
-  background-size: 100vw auto;
+  background-size: 100% auto;
   overflow: hidden;
   background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
 .image-button {
@@ -174,6 +170,7 @@ body {
   left: 40px; /* placeret i venstre hjørne */
   transform: none; /* fjern tidligere translate */
   z-index: 3; /* sørg for den ligger over baggrunden */
+  cursor: pointer;
 }
 
 .image-skattekiste img {
@@ -183,17 +180,14 @@ body {
 
 .pirat {
   position: absolute;
-  bottom: 138px;
-  left: 245px;
-  transform: none;
-  position: absolute;
-  transform: none;
+  width: 150px;
+  bottom: 140px;
+  left: 470px;
   cursor: pointer;
 }
 
 .pirat img {
-  max-width: 100vw;
-  height: 90vh;
+  width: 1000px;
 }
 
 .image-bluefish {
@@ -321,4 +315,17 @@ body {
 .facts.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (max-width: 1629px) { 
+  .pirat {
+    bottom: 110px;
+    left: 375px;
+  }
+}
+
+@media (max-width: 1629px) { 
+  .bg {
+
+  }
 }
