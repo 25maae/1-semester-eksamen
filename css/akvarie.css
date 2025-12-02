@@ -164,29 +164,25 @@ html,
 
 .image-skattekiste {
   position: absolute;
-  width: 20px; /* gør kisten mindre */
-  max-width: 20vw; /* skalerer pænt på små/større skærme */
   bottom: 16px; /* placeret nede */
   left: 40px; /* placeret i venstre hjørne */
-  transform: none; /* fjern tidligere translate */
   z-index: 3; /* sørg for den ligger over baggrunden */
   cursor: pointer;
 }
 
 .image-skattekiste img {
-  max-width: 1750%;
   height: auto;
 }
 
 .pirat {
   position: absolute;
-  width: 150px;
   bottom: 140px;
   left: 470px;
   cursor: pointer;
 }
 
 .pirat img {
+  height: auto;
   width: 1000px;
 }
 
@@ -321,32 +317,50 @@ html,
    Media Queries
 --------------------------------------------------------- */
 
-@media (max-width: 1440px) { /* Laptop L skræm */
+@media (max-width: 1440px) {
+  /* Laptop L skræm */
   .pirat {
-    bottom: 85px;
-    left: 318px;
+    bottom: 100px;
+    left: 340px;
   }
-  .knap {
+  .pirat img {
+    width: 800px;
+  }
 
+  .image-skattekiste img {
+    width: 210px;
+  }
+  .image-skattekiste {
+    left: 20px;
+  }
+
+  .image-greenfish img {
+    max-width: 500%;
+  }
+  .image-nemofish img {
+    max-width: 500%;
+  }
+  .image-yellowfish img {
+    max-width: 350%;
+  }
+  .image-bluefish img {
+    max-width: 500%;
+  }
+
+  .bubble {
+    max-width: 30px;
+  }
+
+  .image-button img {
+    max-width: 80%;
+    height: auto;
   }
 }
 
-@media (max-width: 1024px) { /* Laptop skærm */
-  .pirat {
-    bottom: 90px;
-    left: 200px;
-  }
-  .bg {
-
-  }
+@media (max-width: 1024px) {
+  /* Laptop skærm */
 }
 
-@media (max-width: 768px) { /* Tablet skærm */
-  .pirat {
-    bottom: 90px;
-    left: 290px;
-  }
-  .bg {
-
-  }
+@media (max-width: 768px) {
+  /* Tablet skærm */
 }
