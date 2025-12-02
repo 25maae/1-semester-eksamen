@@ -317,14 +317,35 @@ html,
   transform: translateY(0);
 }
 
-@media (max-width: 1629px) { 
+/* ---------------------------------------------------------
+   Media Queries
+--------------------------------------------------------- */
+
+@media (max-width: 1440px) { /* Laptop L skræm */
   .pirat {
-    bottom: 110px;
-    left: 375px;
+    bottom: 85px;
+    left: 318px;
+  }
+  .knap {
+
   }
 }
 
-@media (max-width: 1629px) { 
+@media (max-width: 1024px) { /* Laptop skærm */
+  .pirat {
+    bottom: 90px;
+    left: 200px;
+  }
+  .bg {
+
+  }
+}
+
+@media (max-width: 768px) { /* Tablet skærm */
+  .pirat {
+    bottom: 90px;
+    left: 290px;
+  }
   .bg {
 
   }
