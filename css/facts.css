@@ -9,7 +9,7 @@
    - farver + font
 --------------------------------------------------------- */
 :root {
-  --font-body: "Poppins", sans-serif;
+  --font-body: "Poppins", sans-serif; /* overskrift font importeret via google fonts*/
 }
 
 /* ---------------------------------------------------------
@@ -92,6 +92,7 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-family: var(--font-body);
 }
 
 /* Bestemmer placering af pop-up */
