@@ -2,13 +2,13 @@
 
 // funktion der afspiller lyd når boble klikkes og tilføjer pop animation
 function handleBubbleClick(event) {
-  const bubbleSound = new Audio("exd-akvarie/sound/bubble-pop.mp3");
+  const bubbleSound = new Audio("../sound/bubble-pop.mp3");
   bubbleSound.play();
 }
 
 // lav den nu med skattekisten, når man klikker på den så skal der afspilles en lyd af skattekisten der åbnes, med skattekiste-sounden
 function handleSkattekisteClick(event) {
-  const skattekisteSound = new Audio("exd-akvarie/sound/skattekiste-sound.mp3");
+  const skattekisteSound = new Audio("../sound/skattekiste-sound.mp3");
   skattekisteSound.play();
 }
 
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function playBtnClick(event) {
-  const playBtnSound = new Audio("exd-akvarie/sound/eating-chips.mp3");
+  const playBtnSound = new Audio("../sound/eating-chips.mp3");
   playBtnSound.play();
 }
 
@@ -39,11 +39,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Event listener til play-knappen for at navigere til spil siden
 document.getElementById("play-button").addEventListener("click", function () {
-  window.location.href = "../index-spil.html";
+  window.location.href = "../spil.html";
 });
 
 function piratClick(event) {
-  const piratSound = new Audio("exd-akvarie/sound/wooden-ship-break.mp3");
+  const piratSound = new Audio("../sound/wooden-ship-break.mp3");
   piratSound.play();
 }
 
@@ -54,5 +54,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Tilføj event listener til knappen for at navigere til fakta siden
 document.getElementById("fish-button").addEventListener("click", function () {
-  window.location.href = "../index-facts.html";
+  window.location.href = "../facts.html";
 });
