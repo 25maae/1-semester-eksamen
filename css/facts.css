@@ -41,16 +41,13 @@ body {
 
 .image-skattekiste {
   position: absolute;
-  width: 20px; /* gør kisten mindre */
-  max-width: 20vw; /* skalerer pænt på små/større skærme */
-  bottom: 35px; /* placeret nede */
-  left: -80px; /* placeret i venstre hjørne */
-  transform: none; /* fjern tidligere translate */
+  bottom: -142px;
+  left: -240px;
   z-index: 3; /* sørg for den ligger over baggrunden */
+  cursor: pointer;
 }
 
 .image-skattekiste img {
-  max-width: 1750%;
   height: auto;
 }
 
