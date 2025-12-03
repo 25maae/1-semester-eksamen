@@ -357,6 +357,15 @@ html,
   .image-button img {
     max-width: 80%;
   }
+  #extra-button {
+    left: -10%;
+  }
+  #fish-button {
+    left: 0%;
+  }
+  #play-button {
+    left: 60%;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -397,7 +406,16 @@ html,
     max-width: 60%;
   }
   .image-button span {
-    font-size: 20px;
+    font-size: 25px;
+  }
+  #extra-button {
+    left: -30%;
+  }
+  #fish-button {
+    left: -10%;
+  }
+  #play-button {
+    left: 60%;
   }
 }
 
@@ -436,9 +454,18 @@ html,
   }
 
   .image-button img {
-    max-width: 30%;
+    max-width: 35%;
   }
   .image-button span {
-    font-size: 10px;
+    font-size: 15px;
+  }
+  #extra-button {
+    left: 30%;
+  }
+  #fish-button {
+    left: -20%;
+  }
+  #play-button {
+    left: 50%;
   }
 }
