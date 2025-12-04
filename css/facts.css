@@ -2,14 +2,16 @@
    Import af font
 --------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
 
 /* ---------------------------------------------------------
    Root-variabler
-   - px: billedstørrelser, offsets
    - farver + font
 --------------------------------------------------------- */
 :root {
-  --font-body: "Poppins", sans-serif; /* overskrift font importeret via google fonts*/
+  --font-body: "Poppins", sans-serif; /* brødtekst font importeret via google fonts*/
+  --font-heading: "Yusei Magic", sans-serif; /* overskrift font importeret via google fonts*/
+  --roed-farve: #920b1b;
 }
 
 /* ---------------------------------------------------------
@@ -84,7 +86,7 @@ body {
   left: 10px;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #920b1b;
+  background-color: var(--roed-farve);
   color: white;
   border: none;
   border-radius: 5px;
