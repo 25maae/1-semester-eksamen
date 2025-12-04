@@ -163,9 +163,9 @@ html,
 /* Skattekiste stil */
 .image-skattekiste {
   position: absolute;
-  bottom: 16px; /* placeret nede */
-  left: 40px; /* placeret i venstre hjørne */
-  z-index: 3; /* sørg for den ligger over baggrunden */
+  bottom: 16px;
+  left: 40px;
+  z-index: 3;
   cursor: pointer;
   filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.616));
   animation: kisteGloed 2s ease-in-out infinite alternate;
@@ -230,6 +230,7 @@ html,
   transform: none;
   z-index: 3;
   top: 30px;
+  cursor: pointer;
   animation: image-yellowfish 10s linear infinite;
 }
 @keyframes image-yellowfish {
