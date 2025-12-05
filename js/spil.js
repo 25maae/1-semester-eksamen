@@ -30,13 +30,13 @@ document.addEventListener("keydown", function (e) {
 function moveDodgerLeft() {
   const leftNumbers = dodger.style.left.replace("px", "");
   const left = parseInt(leftNumbers, 10);
-
   if (left > 0) {
     dodger.style.left = `${left - 30}px`;
     dodger.style.transform = "scaleX(-1)"; // Vend billedet horisontalt
     playSoundOnMovement();
+    tjekKollision();
   } else {
-    playSoundOnGameOver();
+    visProevIgenSkearm();
   }
 }
 
@@ -50,8 +50,9 @@ function moveDodgerRight() {
     dodger.style.left = `${left + 30}px`;
     dodger.style.transform = "scaleX(+1)"; // Vend billedet horisontalt
     playSoundOnMovement();
+    tjekKollision();
   } else {
-    playSoundOnGameOver();
+    visProevIgenSkearm();
   }
 }
 
@@ -65,8 +66,9 @@ function moveDodgerUp() {
     dodger.style.bottom = `${bottom + 30}px`;
     dodger.style.transform = "rotate(-90deg)"; // rotér billedet vertikalt
     playSoundOnMovement();
+    tjekKollision();
   } else {
-    playSoundOnGameOver();
+    visProevIgenSkearm();
   }
 }
 
@@ -78,8 +80,9 @@ function moveDodgerDown() {
     dodger.style.bottom = `${bottom - 30}px`;
     dodger.style.transform = "rotate(90deg)"; // rotér billedet vertikalt
     playSoundOnMovement();
+    tjekKollision();
   } else {
-    playSoundOnGameOver();
+    visProevIgenSkearm();
   }
 }
 
@@ -88,6 +91,7 @@ const moveSound = document.getElementById("movementSound");
 
 function playSoundOnMovement() {
   moveSound.currentTime = 0;
+  moveSound.volume = 0.1;
   moveSound.play();
 }
 
@@ -96,6 +100,7 @@ const gameoverSound = document.getElementById("gameoverSound");
 
 function playSoundOnGameOver() {
   gameoverSound.currentTime = 0;
+  gameoverSound.volume = 0.1;
   gameoverSound.play();
 }
 
@@ -118,4 +123,12 @@ function tjekKollision() {
   ) {
     return true; // Kollision med væg
   }
+  return false; // Ingen kollision
+}
+
+// Funktion til at vise "Prøv igen" skærm
+function visProevIgenSkearm() {
+  const proevIgenSkearm = document.getElementById("proevIgenSkearm");
+  proevIgenSkearm.style.display = "flex";
+  playSoundOnGameOver();
 }
