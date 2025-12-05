@@ -96,11 +96,32 @@ body {
   position: absolute;
   background-color: yellow;
 }
+#bundVeag {
+  width: 20px;
+  height: 1920px;
+  top: -115px;
+  left: 950px;
+  transform: rotate(calc(90deg));
+}
 #veag1 {
   width: 75px;
-  height: 250px;
+  height: 243px;
   top: -10px;
   left: 250px;
+  border-radius: 10px;
+}
+#veag2 {
+  width: 75px;
+  height: 243px;
+  top: -10px;
+  left: 950px;
+  border-radius: 10px;
+}
+#veag3 {
+  width: 75px;
+  height: 243px;
+  top: -10px;
+  left: 800px;
   border-radius: 10px;
 }
 
