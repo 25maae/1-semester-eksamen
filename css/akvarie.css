@@ -1,22 +1,15 @@
-/* ---------------------------------------------------------
-   Import af font
---------------------------------------------------------- */
+/* Import af font fra Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
 
-/* ---------------------------------------------------------
-   Root-variabler
-   - farver + font
---------------------------------------------------------- */
+/* Root-variabler */
 :root {
   --font-body: "Poppins", sans-serif; /* brødtekst font importeret via google fonts*/
   --font-heading: "Yusei Magic", sans-serif; /* overskrift font importeret via google fonts*/
   --roed-farve: #920b1b;
 }
 
-/* ---------------------------------------------------------
-   Global reset
---------------------------------------------------------- */
+/* Global reset */
 * {
   margin: 0;
   padding: 0;
@@ -24,9 +17,7 @@
   font-family: var(--font-body);
 }
 
-/* ---------------------------------------------------------
-   Baggrund stil
---------------------------------------------------------- */
+/* baggrund stil */
 html,
 .bg {
   position: absolute;
@@ -150,7 +141,7 @@ html,
 .bubble:nth-child(9) {
   animation-delay: 0s; /* gør boblen synlig med det samme */
   animation-duration: 18s; /* gør boblen langsommere */
-  left: 81%; /* gør boblen mere til højre */
+  left: 81%;
   --drift: 70px; /* gør boblen mere til højre mens den svømmer*/
 }
 .bubble:nth-child(10) {
@@ -199,12 +190,12 @@ html,
 /* Fisk animationer */
 .image-bluefish {
   position: absolute;
-  width: 20px; /* gør fisken mindre */
-  max-width: 20vw; /* skalerer pænt på små/større skærme */
-  bottom: 400px; /* placeret nede */
-  right: 150px; /* placeret i højre hjørne */
-  transform: none; /* fjern tidligere translate */
-  z-index: 3; /* sørg for den ligger over baggrunden */
+  width: 20px;
+  max-width: 20vw;
+  bottom: 400px;
+  right: 150px;
+  transform: none;
+  z-index: 3;
   animation: fish-swim 10s linear infinite;
 }
 /* Fisk svømme animation */
@@ -217,8 +208,8 @@ html,
   }
 }
 .image-bluefish img {
-  max-width: 600%; /* ændre str på fisken */
-  height: auto; /* bevar proportioner */
+  max-width: 600%;
+  height: auto;
 }
 
 .image-yellowfish {
@@ -234,6 +225,14 @@ html,
   animation: image-yellowfish 10s linear infinite;
 }
 @keyframes image-yellowfish {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(2000px);
+  }
+}
+@keyframes yellow-fish-fast-swim {
   0% {
     transform: translateX(-100px);
   }
@@ -293,9 +292,7 @@ html,
   height: auto;
 }
 
-/* ---------------------------------------------------------
-   Media Queries
---------------------------------------------------------- */
+/* repsomonsive design for forskellige skærmstørrelser */
 @media (max-width: 1440px) {
   /* Laptop L skærm */
   .pirat {

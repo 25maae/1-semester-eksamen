@@ -56,3 +56,4 @@ document.addEventListener("DOMContentLoaded", () => {
 document.getElementById("fish-button").addEventListener("click", function () {
   window.location.href = "../facts.html";
 });
+
