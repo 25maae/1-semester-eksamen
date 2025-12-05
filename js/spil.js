@@ -95,7 +95,7 @@ function playSoundOnMovement() {
   moveSound.play();
 }
 
-// Afspiller lyd ved kollation med væg
+// Afspiller lyd ved kollation
 const gameoverSound = document.getElementById("gameoverSound");
 
 function playSoundOnGameOver() {
@@ -109,19 +109,22 @@ document.getElementById("tilbage").addEventListener("click", function () {
   window.location.href = "../index.html";
 });
 
-// Funktion til at tjekke kollision med vægge
+// Funktion til at tjekke kollision med forhindringer
 function tjekKollision() {
   const dodgerReaction = dodger.getBoundingClientRect();
-  const veag = document.querySelector(".veag");
-  const veagReaction = veag.getBoundingClientRect();
+  const veage = document.getElementsByClassName("veag");
 
-  if (
-    dodgerReaction.left < veagReaction.right &&
-    dodgerReaction.right > veagReaction.left &&
-    dodgerReaction.top < veagReaction.bottom &&
-    dodgerReaction.bottom > veagReaction.top
-  ) {
-    return true; // Kollision med væg
+  for (let veag of veage) {
+    const veagReaction = veag.getBoundingClientRect();
+    if (
+      dodgerReaction.left < veagReaction.right &&
+      dodgerReaction.right > veagReaction.left &&
+      dodgerReaction.top < veagReaction.bottom &&
+      dodgerReaction.bottom > veagReaction.top
+    ) {
+      visProevIgenSkearm();
+      return true; // Kollision med væg
+    }
   }
   return false; // Ingen kollision
 }
