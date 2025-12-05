@@ -90,3 +90,16 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
+
+/* væg stil */
+.veag {
+  position: absolute;
+  background-color: yellow;
+}
+#veag1 {
+  width: 75px;
+  height: 250px;
+  top: -10px;
+  left: 250px;
+  border-radius: 10px;
+}
