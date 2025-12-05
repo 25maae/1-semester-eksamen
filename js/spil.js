@@ -1,5 +1,6 @@
 "use strict";
 
+/* Spil logik for at flytte en figur (dodger) rundt i et spilområde ved hjælp af piletasterne. */
 const dodger = document.getElementById("dodger");
 const game = document.getElementById("game");
 const dodgerWidth = 100;
@@ -102,3 +103,19 @@ function playSoundOnGameOver() {
 document.getElementById("tilbage").addEventListener("click", function () {
   window.location.href = "../index.html";
 });
+
+// Funktion til at tjekke kollision med vægge
+function tjekKollision() {
+  const dodgerReaction = dodger.getBoundingClientRect();
+  const veag = document.querySelector(".veag");
+  const veagReaction = veag.getBoundingClientRect();
+
+  if (
+    dodgerReaction.left < veagReaction.right &&
+    dodgerReaction.right > veagReaction.left &&
+    dodgerReaction.top < veagReaction.bottom &&
+    dodgerReaction.bottom > veagReaction.top
+  ) {
+    return true; // Kollision med væg
+  }
+}
