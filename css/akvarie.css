@@ -181,6 +181,7 @@ html,
   bottom: 140px;
   left: 470px;
   cursor: pointer;
+  z-index: 4;
 }
 .pirat img {
   height: auto;
@@ -195,7 +196,7 @@ html,
   bottom: 400px;
   right: 150px;
   transform: none;
-  z-index: 3;
+  z-index: 5;
   animation: fish-swim 10s linear infinite;
 }
 /* Fisk svømme animation */
@@ -219,7 +220,7 @@ html,
   bottom: 30px;
   left: 30px;
   transform: none;
-  z-index: 3;
+  z-index: 5;
   top: 30px;
   cursor: pointer;
   animation: image-yellowfish 10s linear infinite;
@@ -252,7 +253,7 @@ html,
   bottom: 40px;
   right: 160px;
   transform: none;
-  z-index: 4;
+  z-index: 5;
   animation: image-greenfish 17s linear infinite;
 }
 @keyframes image-greenfish {
@@ -275,7 +276,7 @@ html,
   bottom: 30px;
   left: 30px;
   transform: none;
-  z-index: 3;
+  z-index: 5;
   top: 400px;
   animation: image-nemofish 15s linear infinite;
 }
