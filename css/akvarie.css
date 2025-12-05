@@ -182,6 +182,7 @@ html,
   left: 470px;
   cursor: pointer;
   z-index: 4;
+  filter: drop-shadow(0 0 5px rgba(22, 22, 22, 0.514));
   animation: piratSkygge 10s ease-in-out infinite alternate;
 }
 .pirat img {
