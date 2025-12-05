@@ -80,10 +80,10 @@ body {
 /* tilbage knap stil */
 #tilbage {
   position: absolute;
-  top: 890px;
+  top: 855px;
   left: 10px;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 40px;
   background-color: var(--roed-farve);
   color: white;
   border: none;
