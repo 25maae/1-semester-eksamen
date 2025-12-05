@@ -182,10 +182,21 @@ html,
   left: 470px;
   cursor: pointer;
   z-index: 4;
+  animation: piratSkygge 10s ease-in-out infinite alternate;
 }
 .pirat img {
   height: auto;
   width: 1000px;
+}
+/* Animation for pirat skygge effect */
+@keyframes piratSkygge {
+  from {
+    filter: drop-shadow(0 0 5px rgba(22, 22, 22, 0.514));
+  }
+  to {
+    filter: drop-shadow(0 0 10px rgba(22, 22, 22, 0.514))
+      drop-shadow(0 0 20px rgba(22, 22, 22, 0.514));
+  }
 }
 
 /* Fisk animationer */

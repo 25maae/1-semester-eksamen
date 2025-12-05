@@ -4,12 +4,14 @@
 function handleBubbleClick(event) {
   const bubbleSound = new Audio("../sound/bubble-pop.mp3");
   bubbleSound.play();
+  bubbleSound.volume = 0.1;
 }
 
 // lav den nu med skattekisten, når man klikker på den så skal der afspilles en lyd af skattekisten der åbnes, med skattekiste-sounden
 function handleSkattekisteClick(event) {
   const skattekisteSound = new Audio("../sound/skattekiste-sound.mp3");
   skattekisteSound.play();
+  skattekisteSound.volume = 0.1;
 }
 
 // venter med at hente js siden tilden hele html er loaded
@@ -30,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function playBtnClick(event) {
   const playBtnSound = new Audio("../sound/eating-chips.mp3");
   playBtnSound.play();
+  playBtnSound.volume = 0.1;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -45,6 +48,7 @@ document.getElementById("play-button").addEventListener("click", function () {
 function piratClick(event) {
   const piratSound = new Audio("../sound/wooden-ship-break.mp3");
   piratSound.play();
+  piratSound.volume = 0.1;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -56,4 +60,3 @@ document.addEventListener("DOMContentLoaded", () => {
 document.getElementById("fish-button").addEventListener("click", function () {
   window.location.href = "../facts.html";
 });
-
