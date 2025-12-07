@@ -12,13 +12,19 @@
     />
     <link rel="stylesheet" type="text/css" href="../css/spil.css" />
   </head>
+
   <body>
+    <!-- Tilbage knap -->
     <button id="tilbage">Tilbage</button>
+
+    <!-- Spillebrik -->
     <div id="game">
       <figure>
         <img id="dodger" src="../img/orange-fisk.svg" alt="dodger" />
       </figure>
     </div>
+
+    <!-- Lyde -->
     <audio id="movementSound">
       <source src="../sound/movement-sound.mp3" type="audio/mp3" />
       Your browser does not support the audio element.
@@ -28,6 +34,7 @@
       Your browser does not support the audio element.
     </audio>
 
+    <!-- Forhindringer -->
     <figure class="veag" id="bundVeag"></figure>
     <figure class="veag" id="veag1"></figure>
     <figure class="veag" id="veag2"></figure>
@@ -36,11 +43,19 @@
     <figure class="veag" id="veag5"></figure>
     <figure class="veag" id="veag6"></figure>
 
+    <!-- Score og point -->
+    <div id="score">Score: <span id="point">0</span></div>
+    <div id="moent">
+      <img src="../img/moent.svg" alt="moent" />
+    </div>
+
+    <!-- Prøv igen skærm -->
     <button id="proevIgenSkearm">
       <h1>Game Over!</h1>
       <h2>Prøv igen</h2>
     </button>
 
+    <!-- Script -->
     <script type="text/javascript" src="../js/spil.js"></script>
   </body>
 </html>
