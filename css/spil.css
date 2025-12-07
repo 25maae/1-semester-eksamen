@@ -10,7 +10,8 @@
   --brun-farve: #4a2103;
   --groen-farve: #0d9268;
   --lys-groen-farve: #1aa191;
-  --lyse-groen-farve: #13B258;
+  --lyse-groen-farve: #13b258;
+  --hvid-farve: #ffffff;
 }
 
 /* Global reset */
@@ -27,7 +28,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Forhindrer scrolling */
+  overflow: hidden;
   box-sizing: border-box;
 }
 
@@ -57,7 +58,7 @@ body {
   padding: 10px 20px;
   font-size: 40px;
   background-color: var(--roed-farve);
-  color: white;
+  color: var(--hvid-farve);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -146,9 +147,9 @@ body {
 #proevIgenSkearm h1 {
   font-family: var(--font-heading);
   font-size: 80px;
-  color: white;
+  color: var(--hvid-farve);
 }
 #proevIgenSkearm h2 {
   font-size: 50px;
-  color: white;
+  color: var(--hvid-farve);
 }
