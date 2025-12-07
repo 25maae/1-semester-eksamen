@@ -6,8 +6,8 @@ const game = document.getElementById("spil");
 const dodgerBredde = 100;
 const dodgerHojde = 100;
 
-dodger.style.left = "625px"; // Start i midten horisontalt
-dodger.style.bottom = "400px"; // Start i midten vertikalt
+dodger.style.left = "625px"; // Start position vandret
+dodger.style.bottom = "400px"; // Start position lodret
 
 document.addEventListener("keydown", function (e) {
   if (e.key === "ArrowLeft") {
@@ -175,3 +175,16 @@ function tjekKollision() {
 
   return false;
 }
+
+// Genstart spillet ved klik på "Prøv igen" knappen
+document
+  .getElementById("proevIgenSkearm")
+  .addEventListener("click", function () {
+    const proevIgenSkearm = document.getElementById("proevIgenSkearm");
+    proevIgenSkearm.style.display = "none";
+    score = 0;
+    scoreElement.textContent = score;
+    dodger.style.left = "625px";
+    dodger.style.bottom = "400px";
+    flytMoent();
+  });
