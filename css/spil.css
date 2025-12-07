@@ -8,6 +8,9 @@
   --font-heading: "Yusei Magic", sans-serif; /* overskrift font importeret via google fonts*/
   --roed-farve: #920b1b;
   --brun-farve: #4a2103;
+  --groen-farve: #0d9268;
+  --lys-groen-farve: #1aa191;
+  --lyse-groen-farve: #13B258;
 }
 
 /* Global reset */
@@ -95,7 +98,10 @@ body {
 /* væg stil */
 .veag {
   position: absolute;
-  background-color: yellow;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  outline: var(--lyse-groen-farve) solid 5px;
 }
 #bundVeag {
   width: 20px;
@@ -103,6 +109,8 @@ body {
   top: -115px;
   left: 950px;
   transform: rotate(calc(90deg));
+  background-color: var(--groen-farve);
+  z-index: 10;
 }
 #veag1 {
   width: 78px;
@@ -110,6 +118,7 @@ body {
   top: -8px;
   left: 246px;
   border-radius: 10px;
+  background-image: url(../img/plante2.svg);
 }
 #veag2 {
   width: 79px;
@@ -117,6 +126,7 @@ body {
   top: -8px;
   left: 786px;
   border-radius: 10px;
+  background-image: url(../img/plante2.svg);
 }
 #veag3 {
   width: 80px;
@@ -124,6 +134,7 @@ body {
   top: 605px;
   left: 935px;
   border-radius: 10px;
+  background-image: url(../img/plante.svg);
 }
 #veag4 {
   width: 79px;
@@ -131,6 +142,7 @@ body {
   top: 365px;
   left: 1505px;
   border-radius: 10px;
+  background-image: url(../img/plante.svg);
 }
 #veag5 {
   width: 78px;
@@ -138,6 +150,7 @@ body {
   top: 605px;
   left: 456px;
   border-radius: 10px;
+  background-image: url(../img/plante.svg);
 }
 #veag6 {
   width: 79px;
@@ -145,6 +158,7 @@ body {
   top: -8px;
   left: 1146px;
   border-radius: 10px;
+  background-image: url(../img/plante2.svg);
 }
 
 /* proev igen stil */
