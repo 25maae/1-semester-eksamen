@@ -12,6 +12,8 @@
   --lys-groen-farve: #1aa191;
   --lyse-groen-farve: #13b258;
   --hvid-farve: #ffffff;
+  --gennemsigtig-roed: rgba(255, 0, 0, 0.63);
+  --gennemsigtig-sort-farve: rgba(0, 0, 0, 0.5);
 }
 
 /* Global reset */
@@ -57,11 +59,12 @@ body {
   left: 10px;
   padding: 10px 20px;
   font-size: 40px;
-  background-color: var(--roed-farve);
+  background-color: var(--gennemsigtig-roed);
   color: var(--hvid-farve);
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  z-index: 10;
 }
 
 /* Forhindringer stil */
@@ -71,15 +74,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   outline: var(--lyse-groen-farve) solid 5px;
-}
-#bundVeag {
-  width: 20px;
-  height: 1920px;
-  top: -115px;
-  left: 950px;
-  transform: rotate(calc(90deg));
-  background-color: var(--groen-farve);
-  z-index: 10;
 }
 #veag1 {
   width: 78px;
@@ -100,7 +94,7 @@ body {
 #veag3 {
   width: 80px;
   height: 243px;
-  top: 605px;
+  top: 710px;
   left: 935px;
   border-radius: 10px;
   background-image: url(../img/plante.svg);
@@ -108,7 +102,7 @@ body {
 #veag4 {
   width: 79px;
   height: 480px;
-  top: 365px;
+  top: 473px;
   left: 1505px;
   border-radius: 10px;
   background-image: url(../img/plante.svg);
@@ -116,7 +110,7 @@ body {
 #veag5 {
   width: 78px;
   height: 243px;
-  top: 605px;
+  top: 710px;
   left: 456px;
   border-radius: 10px;
   background-image: url(../img/plante.svg);
@@ -162,7 +156,7 @@ body {
   left: 1650px;
   font-size: 40px;
   color: var(--hvid-farve);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--gennemsigtig-sort-farve);
   padding: 10px 20px;
   border-radius: 10px;
   font-family: var(--font-heading);
