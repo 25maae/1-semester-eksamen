@@ -104,7 +104,7 @@ function playSoundOnGameOver() {
   gameoverSound.play();
 }
 
-// Tilføj event listener til knappen for at navigere tilbage start siden
+// Navigation tilbage til start siden
 document.getElementById("tilbage").addEventListener("click", function () {
   window.location.href = "../index.html";
 });
@@ -116,35 +116,36 @@ function visProevIgenSkearm() {
   playSoundOnGameOver();
 }
 
-// ELEMENTER
+// Mønt og point system
 const moent = document.getElementById("moent");
 const scoreElement = document.getElementById("point");
 let score = 0;
-
 // Opdater point
 function opdaterPoint() {
-  score += 10;
+  score += 1;
   scoreElement.textContent = score;
-  playSoundOnPoint();
 }
 
 // Flyt mønt til tilfældig position
 function flytMoent() {
   const spilBredde = game.offsetWidth;
   const spilHoejde = game.offsetHeight;
+  const moentBredde = moent.offsetWidth;
+  const moentHoejde = moent.offsetHeight;
 
-  const randomX = Math.floor(Math.random() * (spilBredde - 50));
-  const randomY = Math.floor(Math.random() * (spilHoejde - 50));
+  const randomX = Math.floor(Math.random() * (spilBredde - moentBredde));
+  const randomY = Math.floor(Math.random() * (spilHoejde - moentHoejde));
+
   moent.style.left = `${randomX}px`;
   moent.style.bottom = `${randomY}px`;
 }
 
-// Initialisér mønt ved start
+// Tilfældig placering af mønt ved start
 flytMoent();
 function tjekKollision() {
   const dodgerReaction = dodger.getBoundingClientRect();
 
-  // ---- TJEK KOLLISION MED VÆGGE ----
+  // Tjek kollision med vægge
   const veage = document.getElementsByClassName("veag");
 
   for (let veag of veage) {
@@ -160,7 +161,7 @@ function tjekKollision() {
     }
   }
 
-  // ---- TJEK KOLLISION MED MØNT ----
+  // Tjek kollision med mønt
   const moentReaction = moent.getBoundingClientRect();
   if (
     dodgerReaction.left < moentReaction.right &&
