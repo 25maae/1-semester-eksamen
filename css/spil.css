@@ -41,7 +41,7 @@ body {
 }
 
 /* Baggrund stil */
-#game {
+#spil {
   background-image: url(../img/baggrund.svg);
   width: 100%;
   height: 100%;
