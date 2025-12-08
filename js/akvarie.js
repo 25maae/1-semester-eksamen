@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Event listener til play-knappen for at navigere til spil siden
 document.getElementById("play-button").addEventListener("click", function () {
-  window.location.href = "../spil.html";
+  window.location.href = "andre-html/spil.html";
 });
 
 function piratClick(event) {
@@ -58,5 +58,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Tilføj event listener til knappen for at navigere til fakta siden
 document.getElementById("fish-button").addEventListener("click", function () {
-  window.location.href = "../facts.html";
+  window.location.href = "/andre-html/facts.html";
 });
