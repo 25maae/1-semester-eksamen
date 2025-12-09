@@ -58,5 +58,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Tilføj event listener til knappen for at navigere til fakta siden
 document.getElementById("fish-button").addEventListener("click", function () {
-  window.location.href = "/andre-html/facts.html";
+  window.location.href = "andre-html/facts.html";
 });
