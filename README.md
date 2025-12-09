@@ -8,7 +8,7 @@
     * Filerne er blevet delt ordentligt op i passende mapper
         * Sikre bedre overblik og navigation på tværs af mapper og filer.
 * Oprydning i HTML, CSS og JavaScript
-    * SVG, GIF, konvention (kebab-case)
+    * SVG, GIF, ICO og konvention (kebab-case)
         * Skalerbare billeder og mere liv på siderne. Dertil også at man undgår fejl og skaber et bedre overblik og system ved brug af samme konvention.
     * Slettet unødvendige ting
         * Skaber bedre overblik over koden og forhindre fejl.
